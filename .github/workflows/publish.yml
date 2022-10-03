@@ -1,4 +1,9 @@
-on: push
+name: "publish"
+
+on: 
+    push:
+        branches:
+          - main
 
 jobs:
   publish:
@@ -8,8 +13,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 12
+          registry-url: https://registry.npmjs.org
       - run: npm install
+      - run: npm build
       - run: npm test
+      - run: npm publish
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
