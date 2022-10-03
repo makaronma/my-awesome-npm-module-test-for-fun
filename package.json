@@ -1,11 +1,11 @@
 {
-  "name": "my-awesome-npm-module-test-for-fun",
+  "name": "my-awesome-npm-makaronma-test",
   "version": "1.0.0",
   "description": "A nice greeter",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "keywords": ["Hello", "Greeter"],
-  "author": "Makaronma",
+  "author": "makaronma",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
