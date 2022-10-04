@@ -1,6 +1,6 @@
 {
   "name": "my-awesome-npm-makaronma-test",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A nice greeter",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -11,8 +11,8 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jestconfig.json",
-    "prepare" : "npm run build",
-    "version" : "npm run format && git add -A src",
+    "prepare" : "yarn build",
+    "version" : "yarn format && git add -A src",
     "postversion" : "git push && git push --tags"
   },
   "license": "ISC",
